@@ -1,0 +1,48 @@
+.featured_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.feature_card {
+  flex: 1;
+  margin: 0 20px;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.card_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.money_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.money {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+.profit > svg {
+  fill: green;
+}
+
+.loss > svg {
+  fill: red;
+}
+
+.sub {
+  font-size: 15px;
+  color: gray;
+}

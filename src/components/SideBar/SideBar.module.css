@@ -1,0 +1,50 @@
+.container {
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  background-color: var(--white-low);
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+/* custom scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* custom scrollbar for sidebar ends */
+
+.menu {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.sidebar_list {
+  padding: 5px;
+}
+
+.sidebar_list_items {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.sidebar_list_items:hover,
+.sidebar_list_items:focus {
+  background-color: #e2dddd;
+}

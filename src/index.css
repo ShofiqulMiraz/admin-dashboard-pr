@@ -5,3 +5,18 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --white-low: rgb(251, 251, 251);
+  --text-primary: #555;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
