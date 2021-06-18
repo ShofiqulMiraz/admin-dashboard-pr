@@ -1,0 +1,9 @@
+.linechart {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: var(--primary-box-shadow);
+}
+
+.title {
+  margin-bottom: 20px;
+}
