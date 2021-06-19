@@ -3,6 +3,7 @@ import Button from "@material-ui/core/Button";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import Avatar from "@material-ui/core/Avatar";
 import { NewUsersList } from "../../data/newUserList";
+import { Link } from "react-router-dom";
 
 export default function NewUsers() {
   return (
@@ -16,14 +17,16 @@ export default function NewUsers() {
               <span className={styles.name}> {user.name} </span>
               <span className={styles.designation}> {user.designation} </span>
             </div>
-            <Button
-              variant="outlined"
-              color="primary"
-              size="small"
-              startIcon={<VisibilityIcon />}
-            >
-              Details
-            </Button>
+            <Link to={`/user/update/${user.id}`}>
+              <Button
+                variant="outlined"
+                color="primary"
+                size="small"
+                startIcon={<VisibilityIcon />}
+              >
+                Details
+              </Button>
+            </Link>
           </li>
         ))}
       </ul>

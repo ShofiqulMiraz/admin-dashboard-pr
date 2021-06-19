@@ -19,5 +19,12 @@ ul {
 }
 
 a {
+  color: var(--text-primary);
   text-decoration: none;
+}
+
+.active {
+  display: flex;
+  border-radius: 5px;
+  background-color: #e2dddd;
 }

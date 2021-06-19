@@ -11,6 +11,7 @@ import DynamicFeedIcon from "@material-ui/icons/DynamicFeed";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import ReportIcon from "@material-ui/icons/Report";
 import WorkIcon from "@material-ui/icons/Work";
+import { NavLink } from "react-router-dom";
 
 const sidebarContent = [
   {
@@ -87,11 +88,6 @@ const sidebarContent = [
         icon: <WorkIcon />,
       },
       {
-        title: "Analytics",
-        path: "/analytics",
-        icon: <TimelineIcon />,
-      },
-      {
         title: "Reports",
         path: "/reports",
         icon: <ReportIcon />,
@@ -108,10 +104,12 @@ export default function SideBar() {
           <h3 className={styles.title}> {sidebar.title} </h3>
           <ul className={styles.sidebar_list}>
             {sidebar.lists.map((list, index) => (
-              <li className={styles.sidebar_list_items} key={index}>
-                {list.icon}
-                {list.title}
-              </li>
+              <NavLink to={`${list.path}`} exact={true} key={index}>
+                <li className={styles.sidebar_list_items}>
+                  {list.icon}
+                  {list.title}
+                </li>
+              </NavLink>
             ))}
           </ul>
         </div>

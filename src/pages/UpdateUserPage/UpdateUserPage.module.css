@@ -1,0 +1,108 @@
+.update_user_page {
+  padding: 20px;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.user_details_container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.show_user_details {
+  flex: 1 1 30%;
+  box-shadow: var(--primary-box-shadow);
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.top_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.designation {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.bottom {
+  padding: 10px;
+}
+
+.info_title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding-bottom: 5px;
+}
+
+.info_title:not(:first-child) {
+  padding-top: 7px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 5px;
+}
+
+.update_user_details {
+  flex: 1 1 70%;
+  box-shadow: var(--primary-box-shadow);
+  padding: 10px;
+}
+
+.update_details_container {
+  display: flex;
+}
+
+.update_details_left {
+  flex: 1 1 60%;
+  padding: 20px;
+}
+
+.update_details_right {
+  flex: 1 1 40%;
+  padding: 20px;
+}
+
+.profile_pic_container {
+  padding: 5px;
+}
+
+.update_pic_btn {
+  padding: 5px;
+}
+
+.profile_pic {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

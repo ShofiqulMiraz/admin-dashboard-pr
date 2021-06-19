@@ -1,0 +1,28 @@
+.add_new_user {
+  padding: 20px;
+}
+
+.title {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user_form {
+  padding: 30px;
+  box-shadow: var(--primary-box-shadow);
+  display: flex;
+  gap: 30px;
+}
+
+.form_left {
+  flex: 1 1 50%;
+}
+
+.submit_btn {
+  margin-top: 10px;
+}
+
+.form_right {
+  flex: 1 1 50%;
+}
