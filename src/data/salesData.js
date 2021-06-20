@@ -32,3 +32,26 @@ export const salesData = [
     sale: 300,
   },
 ];
+
+export const salesDataPerMonth = [
+  {
+    month: "Jan",
+    sale: 400,
+  },
+  {
+    month: "Feb",
+    sale: 300,
+  },
+  {
+    month: "Mar",
+    sale: 320,
+  },
+  {
+    month: "Apr",
+    sale: 180,
+  },
+  {
+    month: "May",
+    sale: 250,
+  },
+];

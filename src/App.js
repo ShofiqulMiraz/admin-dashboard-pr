@@ -7,6 +7,9 @@ import UsersPage from "./pages/UsersPage/UsersPage";
 import NotFound from "./components/NotFound/NotFound";
 import UpdateUserPage from "./pages/UpdateUserPage/UpdateUserPage";
 import AddNewUser from "./pages/AddNewUser/AddNewUser";
+import ProductList from "./pages/ProductList/ProductList";
+import UpdateProductPage from "./pages/UpdateProductPage/UpdateProductPage";
+import AddNewProduct from "./pages/AddNewProduct/AddNewProduct";
 
 export default function App() {
   return (
@@ -29,6 +32,15 @@ export default function App() {
             </Route>
             <Route path="/user/addnewuser">
               <AddNewUser />
+            </Route>
+            <Route path="/products">
+              <ProductList />
+            </Route>
+            <Route path="/product/update/:id">
+              <UpdateProductPage />
+            </Route>
+            <Route path="/product/addnewproduct">
+              <AddNewProduct />
             </Route>
             <Route path="*">
               <NotFound />

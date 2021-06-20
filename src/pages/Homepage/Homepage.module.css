@@ -4,6 +4,10 @@
   gap: 20px;
 }
 
+.line_chart_container {
+  margin: 20px;
+}
+
 .left {
   flex: 1 1 35%;
   box-shadow: var(--primary-box-shadow);

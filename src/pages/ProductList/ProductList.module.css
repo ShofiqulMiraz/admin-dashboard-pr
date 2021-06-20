@@ -1,0 +1,5 @@
+.product_list_page {
+  width: 100%;
+  height: calc(100vh - 50px);
+  padding: 20px;
+}

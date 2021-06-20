@@ -9,13 +9,16 @@ export default function HomePage() {
   return (
     <>
       <FeaturedInfo />
-      <LineCharts
-        title="Sales Analytics"
-        grid
-        lineKey="sale"
-        XAxisKey="name"
-        data={salesData}
-      />
+      <div className={styles.line_chart_container}>
+        <LineCharts
+          title="Sales Analytics"
+          grid
+          lineKey="sale"
+          XAxisKey="name"
+          data={salesData}
+        />
+      </div>
+
       <div className={styles.widgets}>
         <div className={styles.left}>
           <NewUsers />
